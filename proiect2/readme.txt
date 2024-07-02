@@ -28,5 +28,4 @@ The CSV file is named "netflix_titles.csv" and located in the same directory as 
 Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
-Issues
-If you encounter any issues or have questions, please open an issue in this repository.
+
