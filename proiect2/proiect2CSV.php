@@ -14,6 +14,10 @@ if ($search != '' && !preg_match('/^[\p{L}0-9\s\-\.\/\+\(\)]+$/iu', $search)) {
   echo "Error: Invalid search input. Please use only letters, numbers, spaces, hyphens, periods, forward slashes, plus signs, and parentheses.";
   exit;
 }
+if ($limit > 8808) {
+  echo "Error: Invalid limit input!";
+  exit;
+}
 
 $handle = fopen('netflix_titles.csv', 'r');
 if ($handle === false) {
