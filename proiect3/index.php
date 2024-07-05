@@ -115,11 +115,11 @@ $conn = connectToDatabase();
 if ($conn) {
   // Load CSV file and insert categories into database
 
-  //loadCsvFileAndInsertCategories($conn);
+  loadCsvFileAndInsertCategories($conn);
 
   // Load CSV file and insert movies into database
 
-  //loadCsvFileAndInsertMovies($conn);
+  loadCsvFileAndInsertMovies($conn);
 
   // Get movies with pagination
   $offset = isset($_GET['offset']) ? (int) $_GET['offset'] : 0;
