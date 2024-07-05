@@ -36,5 +36,5 @@ CREATE TABLE movie (
   title VARCHAR(255) NOT NULL,
   category_id INT,
   PRIMARY KEY (movie_id),
-  FOREIGN KEY (category_id) REFERENCES categories (category_id)
+  FOREIGN KEY (category_id) REFERENCES categories (id)
 );
