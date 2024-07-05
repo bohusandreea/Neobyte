@@ -16,3 +16,25 @@ Supports pagination with offset and limit parameters
 
 Pagination
 The API supports pagination with offset and limit parameters. For example, to retrieve 20 records starting from the 10th record, use the following URL: localhost:8080/index.php?offset=10&limit=20
+
+$ docker run --name test-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=pass -d mysql
+
+create database movies;
+
+use movies;
+
+/* create table categories*/
+CREATE TABLE categories(
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+/*create table movie*/
+CREATE TABLE movies (
+  movie_id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  category_id INT,
+  PRIMARY KEY (movie_id),
+  FOREIGN KEY (category_id) REFERENCES categories (category_id)
+);
