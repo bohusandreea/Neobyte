@@ -31,7 +31,7 @@ CREATE TABLE categories(
 );
 
 /*create table movie*/
-CREATE TABLE movies (
+CREATE TABLE movie (
   movie_id INT NOT NULL AUTO_INCREMENT,
   title VARCHAR(255) NOT NULL,
   category_id INT,
