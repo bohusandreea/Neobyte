@@ -1,0 +1,67 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9; 
+}
+
+h1 {
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 300; 
+  text-align: center; 
+}
+
+
+#movies-form {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 20%;
+}
+
+label {
+  display: block; 
+  margin-bottom: 10px;
+  font-weight: 300; 
+  color: #666; 
+}
+
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300; 
+  width: 20%; 
+  margin-bottom: 20px; 
+}
+
+
+#get-movies-btn {
+  background-color: #ffc5c5; 
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 300; 
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+#get-movies-btn:hover {
+  background-color: #ffb6b6; 
+}
+
+#movies-div {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+  width: 70%;
+}

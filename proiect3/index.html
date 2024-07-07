@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h1>Movies</h1>
+    <form id="movies-form" action="movies.php" method="get">
+      <label for="offset">Offset:</label>
+      <input type="number" id="offset" name="offset" value="0" min="0">
+      <br>
+      <label for="limit">Limit:</label>
+      <input type="number" id="limit" name="limit" value="10" min="1">
+    </form>
+    <button id="get-movies-btn">Get Movies</button>
+  <div id="movies-div"></div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
