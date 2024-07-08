@@ -62,7 +62,8 @@ To run this application, you will need:
 2. Create a new MySQL database and import the Netflix titles CSV file into it.
 3. Update the `config.php` file with your database connection settings.
 4. Configure your web server to serve the application files.
-5. Open the `index.html` file in a web browser to access the application.
+5. Run first insert.php to insert your data in the tables movie and categories
+6. Open the `index.html` file in a web browser to access the application.
 
 ## Notes
 
