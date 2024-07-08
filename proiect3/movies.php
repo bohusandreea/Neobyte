@@ -28,15 +28,21 @@ foreach ($results as $movie) {
 header('Content-Type: application/json');
 echo json_encode($json_data, JSON_PRETTY_PRINT);*/
 
+$movies = GetAllItemsFromDB($conn);
+
+$json_data = json_encode($movies, JSON_PRETTY_PRINT);
+
+$json_array = json_decode($json_data, true);
+
 $offset = isset($_GET['offset']) ? (int) $_GET['offset'] : 0;
 $limit = isset($_GET['limit']) ? (int) $_GET['limit'] : 10;
 
-$movies = GetAllItemsFromDB($conn);
-
-$json_data = array_slice($movies, $offset, $limit);
+$json_data = json_encode(array_slice($json_array, $offset, $limit), JSON_PRETTY_PRINT);
 
 header('Content-Type: application/json');
-echo json_encode($json_data, JSON_PRETTY_PRINT);
+echo $json_data;
+
+$conn = null;
 
 // Close the database connection
 $conn = null;
